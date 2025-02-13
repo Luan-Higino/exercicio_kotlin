@@ -8,6 +8,6 @@ fun main(){
     var produto = readln().toDouble()
     val desconto = 0.05
     val soma = desconto * produto
-    println("O desconto de $produto, ficou ${produto - soma}")
+    println("O desconto de $produto, ficou R$${produto - soma}")
 
 }
