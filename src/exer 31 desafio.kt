@@ -26,6 +26,7 @@ fun main(){
         (escolhaJogador == "Pedra" && escolhaComputador == "Tesoura") -> println("Você venceu")
         else -> println("Você perdeu!!")
     }
+
 }
 
 
