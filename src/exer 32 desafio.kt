@@ -5,21 +5,21 @@
  */
 
 import kotlin.random.Random
-import kotlin.random.nextInt
+
 
 fun main(){
     val numeroSorteado = Random.nextInt(1,6)
     println("Digite um numero entre 1..5:")
     val jogador = readln().toInt()
 
-    if(jogador == numeroSorteado){
+    if (jogador > 5){
+        println("Número invalido, pois foi maior que cinco")
+
+    }else if(jogador == numeroSorteado){
         println("Você acertou!!!")
         println("O número sorteado foi: $numeroSorteado")
+
     }else{
         println("Você errou!, o número sorteado foi: $numeroSorteado")
     }
-
-
-
-
 }
