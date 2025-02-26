@@ -32,7 +32,7 @@ fun main() {
         val precoKm = if (kmPercorridos <= 200) kmPercorridos * 0.30 else(200 * 0.30) + ((kmPercorridos - 200) * 0.25)
         val total = aluguel + precoKm
         println("O valor total a ser pago é: R$%.2f".format(total))
-    }else{
+    }else{  
         println("Tipo de carro invalido!")
 
     }
