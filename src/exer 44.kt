@@ -8,6 +8,10 @@
 //incremento: 2
 //Contagem: 3 5 7 9
 //Acabou!
+///!!! Continuação!!!
+///O programa acima vai ter um problema quando digitarmos o
+//primeiro valor maior que o último. Resolva esse problema com um
+//código que funcione em qualquer situação.
 
 fun main(){
     print("Primeiro valor: ")
@@ -18,8 +22,16 @@ fun main(){
     val incremento = readln().toInt()
 
     print("Contagem: ")
-    for (i in numeroA .. numeroB step incremento){
-        print("$i ")
+    if (numeroA < numeroB) {
+        for (i in numeroA..numeroB step incremento) {
+            print("$i ")
+        }
+
+    }else{
+        for (i in numeroA downTo numeroB step incremento){
+            print("$i ")
+        }
+
     }
     print("Acabou!")
 }
